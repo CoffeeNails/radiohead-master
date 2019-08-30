@@ -41,7 +41,3 @@ while i<10:
 
 
 #4. mysql combination of rfid data and restapi coordinates after hex2decimal conversion
-
-
-#this is some random stuff
-#os.system('gnome-terminal -x sudo /home/jonathan/BRMSample/build/release/BRMSample')
