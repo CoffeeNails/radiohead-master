@@ -9,9 +9,9 @@ SQL-code to combine tables.
 
 4. SQL.py has 3 functions:
 ```  Code:
-	-SaveBookCSV Imports folder paths all .csv files to MySQL and then moves them to archive folder in the same path. 
-	-SaveMirCSV Imports folder paths all .csv files to MySQL and then moves them to archive folder in the same path.
-	-CombineTables Combines MIRData and BookData by timestamp and saves that data to bigbang table.
+SaveBookCSV Imports folder paths all .csv files to MySQL and then moves them to archive folder in the same path. 
+SaveMirCSV Imports folder paths all .csv files to MySQL and then moves them to archive folder in the same path.
+CombineTables Combines MIRData and BookData by timestamp and saves that data to bigbang table.
 ```
  
 
