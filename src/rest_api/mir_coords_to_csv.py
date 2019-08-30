@@ -42,7 +42,7 @@ with open('coords.csv', mode='w') as csvfile: # open the csv file
             error=1
 
         ###  get the timestamp %f')[:-3] gives second with 3 digits ###
-        timestamp = datetime.utcnow().strftime('%Y/%m/%d %H:%M:%S.%f')[:-3]
+        timestamp = datetime.now().strftime('%Y/%m/%d %H:%M:%S.%f')[:-3]
 
         ### write the REST API values into csv file
         if error != 1:
