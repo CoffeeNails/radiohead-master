@@ -1,0 +1,25 @@
+cat /home/veera/radiohead-master/BRMSample/build/release/data/example.csv | cut -d',' -f2 | sort -rn | uniq -c | sort -rn | wc -l
+
+#count without first line
+cat /home/veera/radiohead-master/BRMSample/build/release/data/example.csv | cut -d',' -f2 | sort -rn | uniq -c | sort -rn |sed -e 1d | wc -l
+
+
+#strip datablock from csv file to make set
+cat /home/veera/radiohead-master/BRMSample/build/release/data/example.csv | cut -d',' -f2 > /home/veera/radiohead-master/BRMSample/build/release/data/set.csv
+
+#strip datablock from csv file to make ref
+cat /home/veera/radiohead-master/BRMSample/build/release/data/example.csv | cut -d',' -f2 > /home/veera/radiohead-master/BRMSample/build/release/data/ref.csv
+
+
+#show count of how many differences there are between two files
+diff /home/veera/radiohead-master/BRMSample/build/release/data/set.csv /home/veera/radiohead-master/BRMSample/build/release/data/ref.csv | grep -v ^@ | sed -e 1d | wc -l
+
+
+#show differences between two files
+diff set.csv ref.csv | egrep "^>"
+
+
+
+
+#i dunno what is this
+diff /home/veera/radiohead-master/BRMSample/build/release/data/set.csv /home/veera/radiohead-master/BRMSample/build/release/data/ref.csv | egrep "^>"
