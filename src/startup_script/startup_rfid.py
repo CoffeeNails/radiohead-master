@@ -2,11 +2,10 @@ from os.path import expanduser
 import datetime
 import time
 import os
-import subprocess #maybe this would be useful for starting BRMSample
 import pynput #keypress library
 from pynput.keyboard import Key, Controller
 
-#This is the startup script for the RFID module
+#This is the startup script for the RFID module for automating the whole process. WIP
 
 
 #1. check rest api first (getstatus), implement here
