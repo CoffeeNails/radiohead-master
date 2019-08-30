@@ -15,8 +15,8 @@ from pynput.keyboard import Key, Controller
 
 
 #2. start RFID module
-sudoPassword = 'Radiohead'
-command = 'gnome-terminal -x sudo /home/veera/radiohead-master/BRMSample/build/release/BRMSample'
+sudoPassword = 'puthereyourpassword'
+command = 'gnome-terminal -x sudo /home/user/radiohead-master/BRMSample/build/release/BRMSample'
 p = os.system('echo %s|sudo -S %s' % (sudoPassword, command))
 
 #wait a bit
