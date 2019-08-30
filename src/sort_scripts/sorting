@@ -1,3 +1,5 @@
+#These scripts can be used in Linux terminal to determine how accurate the data is.
+
 #count with first line
 cat /home/veera/radiohead-master/BRMSample/build/release/data/example.csv | cut -d',' -f2 | sort -rn | uniq -c | sort -rn | wc -l
 
